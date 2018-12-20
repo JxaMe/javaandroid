@@ -1,17 +1,17 @@
-public class Person {
+abstract class Person {
     String name;
     int age;
-    Person(){
+
+    Person() {
 
     }
-    Person(String name,int age) {
-        this.name=name;
-        this.age=age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    void eat() {
-        System.out.println("吃饭");
-    }
+    abstract void eat();
 
     void talk() {
         System.out.println("讲话");
